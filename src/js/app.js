@@ -36,13 +36,10 @@ function render(variables = {}) {
   let city = variables.city ? variables.city : "Miami";
   let country = variables.country ? variables.country : "USA";
   let pos = variables.pos ? variables.pos : "right";
-  let twitter = variables.twitter ? variables.twitter : "4geeksacademy";
-  let github = variables.github ? variables.github : "4geeksacademy";
-  let linkedin = variables.linkedin
-    ? `in/${variables.linkedin}`
-    : "school/4geeksacademy";
-
-  let instagram = variables.instagram ? variables.instagram : "4geeksacademy";
+  let twitter = variables.twitter ? variables.twitter : "";
+  let github = variables.github ? variables.github : "";
+  let linkedin = variables.linkedin ? `in/${variables.linkedin}` : "";
+  let instagram = variables.instagram ? variables.instagram : "";
 
   // reset the website body with the new html output
   document.querySelector("#widget_content").innerHTML = `<div class="widget">

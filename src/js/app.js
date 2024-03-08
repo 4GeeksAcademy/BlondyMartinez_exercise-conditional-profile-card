@@ -35,7 +35,9 @@ function render(variables = {}) {
   let role = variables.role ? variables.role : "Web Developer";
   let city = variables.city ? variables.city : "Miami";
   let country = variables.country ? variables.country : "USA";
-  let pos = variables.pos ? variables.pos : "right";
+  let pos = variables.socialMediaPosition
+    ? variables.socialMediaPosition
+    : "position-left";
   let twitter = variables.twitter ? variables.twitter : "";
   let github = variables.github ? variables.github : "";
   let linkedin = variables.linkedin ? `in/${variables.linkedin}` : "";
@@ -48,7 +50,7 @@ function render(variables = {}) {
           <h1>${name} ${lastName}</h1>
           <h2>${role}</h2>
           <h3>${city}, ${country}</h3>
-          <ul class="position-${pos}">
+          <ul class="${pos}">
             <li><a href="https://twitter.com/${twitter}"><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://github.com/${github}"><i class="fab fa-github"></i></a></li>
             <li><a href="https://linkedin.com/${linkedin}"><i class="fab fa-linkedin"></i></a></li>

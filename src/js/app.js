@@ -54,7 +54,7 @@ function render(variables = {}) {
           <ul class="position-${pos}">
             <li><a href="https://twitter.com/${twitter}"><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://github.com/${github}"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/school/${linkedin}"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://linkedin.com/${linkedin}"><i class="fab fa-linkedin"></i></a></li>
             <li><a href="https://instagram.com/${instagram}"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
